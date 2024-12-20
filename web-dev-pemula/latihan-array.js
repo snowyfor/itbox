@@ -1,19 +1,19 @@
-// Soal 
-const murid = [
+// Exercise (Check answers on line 35)
+const students = [
     [1, "Jacob", 3.5],
     [2, "Thomas", 3.0],
     [3, "James", 2.75]
 ]
-// Syarat lulus IPK minimal 3.0
+// Minimum GPA 3.0 to Pass
 
-// Hasil (kunci jawaban cek di line 45)
+// Result
 /*
-    1. Jacob, IPK = 3.5, Lulus
-    2. Thomas, IPK = 3.0, Lulus
-    3. James, IPK = 2.75, Gagal
+    1. Jacob, IPK = 3.5, Passed
+    2. Thomas, IPK = 3.0, Passed
+    3. James, IPK = 2.75, Failed
 */
 
-// Jawab
+// Code here
 
 
 
@@ -32,16 +32,14 @@ const murid = [
 
 
 
+// Answers
 
-
-// Jawaban
-
-for(let i=0; i<murid.length; i++) {
-    if(murid[i][2] >= 3.0) {
-        console.log(murid[i][0] + ". " + murid[i][1] + ", IPK = " +
-            murid[i][2] + ", Lulus");
-    } else {
-        console.log(murid[i][0] + ". " + murid[i][1] + ", IPK = " +
-            murid[i][2] + ", Gagal");
+for(let i=0; i<students.length; i++) {  //iterate as many as the number of students
+    if(students[i][2] >= 3.0) {  //GPA >= 3.0
+        console.log(students[i][0] + ". " + students[i][1] + ", IPK = " +
+            students[i][2] + ", Passed");
+    } else {  //GPA < 3.0
+        console.log(students[i][0] + ". " + students[i][1] + ", IPK = " +
+            students[i][2] + ", Failed");
     }
 }
