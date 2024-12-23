@@ -1,3 +1,29 @@
+/*
+Create these (five) function to fulfill the given output
+
+> checkPrime(number) function
+checkPrime(5) -> true
+checkPrime(9) -> false
+
+> changeToCapital(str) function
+changeToCapital("Hello World") -> HELLO WORLD
+
+> minMaxValue(arrOfNumber) function
+minMaxValue([5, 9, 1]) -> { min: 1, max:9 }
+
+> countVocal(str)
+countVocal("You imagine ocean") -> { a: 2, i: 2, u: 1, e: 1, o: 0 }
+
+> findAverageMax(array2D)
+findAverageMax([
+    [10,3,5,7,9],
+    [5,6,4,1,2],
+    [7,8,12,10,5]
+]);
+> output: "The array at index 3 is the average max"
+
+*/
+
 // 1
 function checkPrime(num) {
     for(let i = 2; i < num; i++) {
