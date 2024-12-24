@@ -1,0 +1,9 @@
+{
+    "name": "Ani",
+    "age": 30,
+    "address": {
+      "street": "St. Merdeka No. 10",
+      "city": "Jakarta"
+    },
+    "hobby": ["reading", "swimming"]
+}
