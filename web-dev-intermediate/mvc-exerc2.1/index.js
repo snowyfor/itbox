@@ -1,7 +1,6 @@
 /*
-UPDATE from mvc-exerc1: see data.json & index.js in this folder
+UPDATE from mvc-exerc2: see TodoController.js, Todo.js, and TodoView.js
 
-run 'node index.js show' in Terminal
 */
 
 // Process Argv : to get input from Terminal
