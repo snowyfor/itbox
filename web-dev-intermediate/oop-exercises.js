@@ -2,12 +2,12 @@
 
 > Create Class Student
 Attribute: name, subjects(array), score
-Method: mentionName(), mentionSubject()
+Method: mentionName(), mentionSubjects()
 > result
 let andy = new Student("Andy", ["Physics", "Chemistry"], 95);
 console.log(andy); -> the above instance
-andi.mentionName(); -> Andy
-andi.mentionSubject(); -> [ 'Physics', 'Chemistry' ]
+andy.mentionName(); -> Andy
+andy.mentionSubjects(); -> [ 'Physics', 'Chemistry' ]
 
 Answer at line 25
 
@@ -32,7 +32,7 @@ class Student {
     mentionName() {
         console.log(this.name);
     }
-    mentionSubject() {
+    mentionSubjects() {
         console.log(this.subjects);
     }
 }
@@ -40,4 +40,4 @@ class Student {
 let andy = new Student("Andy", ["Physics", "Chemistry"], 95);
 console.log(andy);
 andy.mentionName();
-andy.mentionSubject();
+andy.mentionSubjects();
