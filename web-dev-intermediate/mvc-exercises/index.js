@@ -1,22 +1,16 @@
-/*
-UPDATE from V1: see data.json & index.js in this folder
-
-run 'node index.js show' in Terminal
-*/
-
-// Process Argv : to get input from Terminal
+// Process Argv : to get input from terminal
 // Conditional : show, add, delete, update
 
 const command = process.argv[2];
 const params = process.argv.slice(3);
+// const argvValue = process.argv;
+// console.log(argvValue);
+// console.log(command);
+// console.log(params);
 
 switch (command) {
     case 'show':
-        // console.log("Command show");
-        const fs = require('fs');
-        let data = fs.readFileSync('./data.json');
-        let todos = JSON.parse(data);
-        console.log(todos);
+        console.log("Command show");
         break;
     case 'add':
         console.log("Command add");
