@@ -1,5 +1,5 @@
 /*
-UPDATE from mvc-exerc2: see all files in this folder
+UPDATE from mvc-exerc1: see data.json & index.js in this folder
 
 run 'node index.js show' in Terminal
 */
@@ -9,24 +9,25 @@ run 'node index.js show' in Terminal
 
 const command = process.argv[2];
 const params = process.argv.slice(3);
-// import class TodoController
-const TodoController = require('./controller/TodoController')
 
 switch (command) {
     case 'show':
-        // console.log(TodoController);
-        TodoController.show();
+        // console.log("Command show");
+        const fs = require('fs');
+        let data = fs.readFileSync('./data.json');
+        let todos = JSON.parse(data);
+        console.log(todos);
         break;
     case 'add':
-        TodoController.add(params);
+        console.log("Command add");
         break;
     case 'delete':
-        TodoController.delete(params);
+        console.log("Command delete");
         break;
     case 'update':
-        TodoController.update(params);
+        console.log("Command update");
         break;
     default:
-        TodoController.message("Enter the correct command!");
+        console.log("Enter the correct command!")
         break;
 }

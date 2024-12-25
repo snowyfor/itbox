@@ -1,5 +1,5 @@
 /*
-UPDATE from mvc-exerc2: see all files in this folder
+UPDATE from mvc-exerc2.1: see Todo.js in 'model' folder
 
 run 'node index.js show' in Terminal
 */
