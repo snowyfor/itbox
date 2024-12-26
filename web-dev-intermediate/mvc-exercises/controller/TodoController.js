@@ -15,7 +15,7 @@ class TodoController {
         Todo.delete(todo);
     }
     static update(todo) {
-
+        Todo.update(todo);
     }
     static message(msg) {
         TodoView.message(msg);

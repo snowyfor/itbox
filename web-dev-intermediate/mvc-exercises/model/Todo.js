@@ -34,7 +34,21 @@ class Todo {
         let todos = this.getTodos();
         let id = Number(todo[0]);
         todos = todos.filter(todo => todo.id !== id);
-        //console.log(todos);  //testing with: run 'node index.js delete 3' THEN run 'index.js delete 2'
+        //console.log(todos);  //testing with this command: run 'node index.js delete 3' THEN run 'index.js delete 2'
+        this.save(todos);
+    }
+    static update(todo) {
+        // console.log(todo)  //testing with: run 'node index.js update 3 "Eat Together"'
+        let todos = this.getTodos();
+        let id = Number(todo[0]);
+        let task = todo[1];
+        todos = todos.map(todo => {
+            if(todo.id === id) {
+                todo.task = task;
+            }
+            return todo;
+        })
+        // console.log(todos);  //testing with: run 'node index.js update 3 "Eat Together"'
         this.save(todos);
     }
     // save data to JSON

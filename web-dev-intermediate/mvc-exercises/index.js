@@ -1,9 +1,9 @@
 /*
-UPDATE from V3.1: see TodoController.js > delete() AND Todo.js > static delete()
+UPDATE from V3.2: see TodoController.js > update() AND Todo.js > static update()
 
 Note: follow the instructions below  while opening data.json
-1) run 'node index.js delete 3' in Terminal
-2) run 'node index.js add "Do The Assignment"' in Terminal
+1) run 'node index.js update 3 "Eat Together"' in Terminal
+2) run 'node index.js update 3 "Do The Assignment"' in Terminal
 
 */
 
