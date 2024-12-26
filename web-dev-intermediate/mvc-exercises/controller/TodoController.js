@@ -12,7 +12,7 @@ class TodoController {
         Todo.add(todo);
     }
     static delete(todo) {
-        
+        Todo.delete(todo);
     }
     static update(todo) {
 

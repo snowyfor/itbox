@@ -29,6 +29,14 @@ class Todo {
         // console.log(todos);
         this.save(todos);
     }
+    static delete(todo) {
+        // console.log(todo); //testing with: run 'node index.js delete 3' in Terminal
+        let todos = this.getTodos();
+        let id = Number(todo[0]);
+        todos = todos.filter(todo => todo.id !== id);
+        //console.log(todos);  //testing with: run 'node index.js delete 3' THEN run 'index.js delete 2'
+        this.save(todos);
+    }
     // save data to JSON
     static save(data) {
         fs.writeFileSync('./data.json',JSON.stringify(data, null, 3))
