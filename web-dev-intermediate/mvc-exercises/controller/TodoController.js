@@ -9,7 +9,7 @@ class TodoController {
         TodoView.show(todos);
     }
     static add(todo) {
-        
+        Todo.add(todo);
     }
     static delete(todo) {
         

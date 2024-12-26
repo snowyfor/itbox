@@ -1,7 +1,10 @@
 /*
-UPDATE from V2.3: see TodoView.js in 'view' folder
+UPDATE from V3: see Todo.js > add() & save() section, in 'model' folder 
 
-run 'node index.js show' in Terminal
+Note: follow the instructions below  while opening data.json
+1) run 'node index.js show' in Terminal
+2) run 'node index.js add "Do The Assignment"' in Terminal
+3) run 'node index.js show' in Terminal
 */
 
 // Process Argv : to get input from Terminal
