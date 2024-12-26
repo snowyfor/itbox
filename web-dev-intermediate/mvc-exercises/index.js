@@ -1,5 +1,7 @@
 /*
-UPDATE from V2: see TodoController.js, Todo.js, and TodoView.js
+UPDATE from V2.1: see all files in mvc-exercises
+
+run 'node index.js show' in Terminal
 */
 
 // Process Argv : to get input from Terminal
@@ -7,25 +9,24 @@ UPDATE from V2: see TodoController.js, Todo.js, and TodoView.js
 
 const command = process.argv[2];
 const params = process.argv.slice(3);
+// import class TodoController
+const TodoController = require('./controller/TodoController')
 
 switch (command) {
     case 'show':
-        // console.log("Command show");
-        const fs = require('fs');
-        let data = fs.readFileSync('./data.json');
-        let todos = JSON.parse(data);
-        console.log(todos);
+        // console.log(TodoController);
+        TodoController.show();
         break;
     case 'add':
-        console.log("Command add");
+        TodoController.add(params);
         break;
     case 'delete':
-        console.log("Command delete");
+        TodoController.delete(params);
         break;
     case 'update':
-        console.log("Command update");
+        TodoController.update(params);
         break;
     default:
-        console.log("Enter the correct command!")
+        TodoController.message("Enter the correct command!");
         break;
 }
