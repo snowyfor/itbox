@@ -1,5 +1,5 @@
 /*
-UPDATE from V2.1: see all files in mvc-exercises
+UPDATE from V2.2: see Todo.js in 'model' folder
 
 run 'node index.js show' in Terminal
 */
