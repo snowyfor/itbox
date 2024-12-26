@@ -1,5 +1,5 @@
 /*
-UPDATE from V2.2: see Todo.js in 'model' folder
+UPDATE from V2.3: see TodoView.js in 'view' folder
 
 run 'node index.js show' in Terminal
 */
