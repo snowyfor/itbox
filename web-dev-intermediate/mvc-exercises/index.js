@@ -1,7 +1,5 @@
 /*
-UPDATE from V1: see data.json & index.js
-
-run 'node index.js show' in Terminal
+UPDATE from V2: see TodoController.js, Todo.js, and TodoView.js
 */
 
 // Process Argv : to get input from Terminal
