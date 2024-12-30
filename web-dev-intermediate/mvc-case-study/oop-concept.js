@@ -1,4 +1,6 @@
 /*
+Note: factory class (class that return object) is a class that contains methods used for entire program.
+
  Cookie : parent class
  Chocolate, Strawberry, Blueberry : child class
  Oven : factory class(class that return object 'container{ [] }')

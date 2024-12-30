@@ -1,0 +1,14 @@
+{
+   "incomes": [
+      {
+         "name": "Monthly Salary",
+         "total": 5000
+      }
+   ],
+   "expenses": [
+      {
+         "name": "Electricity Bill",
+         "total": 1000
+      }
+   ]
+}
