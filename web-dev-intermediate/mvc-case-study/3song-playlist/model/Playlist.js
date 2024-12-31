@@ -8,7 +8,7 @@ class Playlist {
         this.songs = songs || [];
     }
     static getPlaylist() {
-        let data = JSON.parse(fs.readFileSync('./data.json'));
+        let data = JSON.parse(fs.readFileSync('./data.json', 'utf8'));
         let playlists = data.map(playlist => {
             let {id, name, songs} = playlist;
             songs = songs.map(song => {
