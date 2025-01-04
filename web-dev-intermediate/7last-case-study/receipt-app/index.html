@@ -10,7 +10,7 @@
     <div class="container">
         <div class="container-item">
             <div class="form-header">
-                <h1>Kwitansi Cetak</h1>
+                <h1>Printed Receipt</h1>
             </div>
             <hr>
             <div class="form-box">
@@ -19,8 +19,8 @@
                     <input type="text" id="name" placeholder="your name">
                 </div>
                 <div class="form-item">
-                    <label for="item">Barang</label>
-                    <input type="text" id="item" placeholder="item name">
+                    <label for="itemName">Item</label>
+                    <input type="text" id="itemName" placeholder="item name">
                 </div>
                 <div class="form-item">
                     <label for="price">Price</label>
@@ -29,6 +29,34 @@
                 <div class="form-item">
                     <button id="btnSubmit">Submit</button>
                 </div>
+            </div>
+            <hr>
+            <div class="cart-box">
+                <div class="cart-header">
+                    <h3>Carts</h3>
+                    <span id="cartName"></span>
+                </div>
+                <div class="cart-table">
+                    <table border="1" cellspacing="0">
+                        <thead>
+                            <tr>
+                                <th>Id</th>
+                                <th>Name</th>
+                                <th>Price</th>
+                            </tr>
+                        </thead>
+                        <tbody id="tBody">
+                            <!-- <tr>
+                                <td>1</td>
+                                <td>Laptop</td>
+                                <td>Rp. 10000</td>
+                            </tr> -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="submit-print">
+                <button id="btnPrint">Submit</button>
             </div>
         </div>
     </div>

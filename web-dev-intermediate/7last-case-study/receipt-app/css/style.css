@@ -18,7 +18,7 @@ body {
 
 .container-item {
     width: 50%;
-    height: 75vh;
+    height: 95vh;
     border: 1px solid #ccc;
     padding: 10px;
 }
@@ -52,4 +52,30 @@ body {
 #btnSubmit {
     padding: 8px 16px;
     border: none;
+}
+
+#btnSubmit:hover {
+    background-color: darkgray;
+}
+
+.cart-box {
+    width: 100%;
+}
+
+.cart-header {
+    text-align: center;
+    margin: 8px;
+}
+
+.cart-table {
+    width: 100%;
+}
+
+.cart-table table {
+    width: 100%;
+}
+
+th, td {
+    padding: 8px;
+    text-align: center;
 }
