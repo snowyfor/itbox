@@ -55,7 +55,7 @@ function incomeHandler() {
     document.querySelector('#name').value = '';
     document.querySelector('#balance').value = '';
 
-    alert(`"${nameValue}" telah ditambahkan!`);
+    alert(`"${nameValue}" has been added!`);
 }
 
 function expenseHandler() {
@@ -83,7 +83,7 @@ function expenseHandler() {
     document.querySelector('#name').value = '';
     document.querySelector('#balance').value = '';
 
-    alert(`"${nameValue}" telah ditambahkan!`);
+    alert(`"${nameValue}" has been added!`);
 }
 
 // getTransaction
