@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Income Expense</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="container-item">
+            <div class="header">
+                <h1>Income and Expense</h1>
+            </div>
+            <hr>
+            <div class="balance-box">
+                <div class="balance-text">
+                    <small>Balance Amount</small>
+                </div>
+                <span id="balance-text">$0</span>
+            </div>
+            <div class="form-box">
+                <div class="form-box-item">
+                    <div class="form-item">
+                        <input type="text" name="transaction name" id="name" placeholder="Transaction name">
+                    </div>
+                    <div class="form-item">
+                        <input type="text" name="balance" id="balance" placeholder="Balance">
+                    </div>
+                </div>
+                <div class="form-box-button">
+                    <div class="form-button">
+                        <button id="btnIncome">Income</button>
+                    </div>
+                    <div class="form-button">
+                        <button id="btnExpense">Expense</button>
+                    </div>
+                </div>
+                <div class="transaction-box">
+                    <div class="transaction-item">
+                        <div class="transaction-header">
+                            <h3>Income</h3>
+                        </div>
+                        <div class="transaction-table">
+                            <table border="1" cellspacing="0">
+                                <thead>
+                                    <tr>
+                                        <th>Id</th>
+                                        <th>Transaction Name</th>
+                                        <th>Balance</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="tBodyInc">
+                                    <!-- 
+                                    <tr>
+                                        <td>1</td>
+                                        <td>Salary</td>
+                                        <td>1000</td>
+                                    </tr>
+                                    -->
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="transaction-item">
+                        <div class="transaction-header">
+                            <h3>Expense</h3>
+                        </div>
+                        <div class="transaction-table">
+                            <table border="1" cellspacing="0">
+                                <thead>
+                                    <tr>
+                                        <th>Id</th>
+                                        <th>Transaction Name</th>
+                                        <th>Balance</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="tBodyExp">
+                                    <!-- 
+                                    <tr>
+                                        <td>1</td>
+                                        <td>Salary</td>
+                                        <td>1000</td>
+                                    </tr>
+                                    -->
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/index.js"></script>
+</body>
+</html>
