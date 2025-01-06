@@ -12,6 +12,7 @@ add bake() & deliver() method in factory class
 -bake() : to add 1 cake to oven
 -deliver() : to delete 1 cake from oven
 
+Run node 1oop-concept.js in terminal (with cd this directory)
 */
 
 class Cookie {
