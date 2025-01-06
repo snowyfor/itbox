@@ -12,7 +12,7 @@ Create Note class in Note.js as Factory Class
  else if(total < 0) then 'Status: minus!'
  else 'Status: balanced!'
 
-Run this index.js file
+Run node index.js in terminal (with cd this directory)
 */
 
 const Note = require('./Note');
