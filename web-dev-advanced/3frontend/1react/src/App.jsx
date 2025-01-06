@@ -65,7 +65,7 @@ function App() {
       {
         profiles.map((profile) => {
           return (
-            <Props profile={profile} />
+            <Props prof={profile} />
           )
         })
       } 

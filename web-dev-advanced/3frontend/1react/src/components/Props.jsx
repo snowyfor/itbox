@@ -1,7 +1,7 @@
 function Props(props) {
     // console.log(props);
     // const { name, age } = props;  // props basic & loop props
-    const { name, age } = props.profile;  // use .profile
+    const { name, age } = props.prof;  // use .profile
 
     return (
         <div>
